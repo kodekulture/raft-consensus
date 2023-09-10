@@ -5,11 +5,14 @@ services:
     container_name: "node_1"
     build:
       context: .
+      target: development
   node_2:
     container_name: "node_2"
     build:
       context: .
+      target: development
   node_3:
     container_name: "node_3"
     build:
       context: .
+      target: development

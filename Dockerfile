@@ -1,10 +1,8 @@
 FROM golang:1.20 AS development
 WORKDIR /node
-COPY go.mod .
-COPY go.sum .
-COPY main.go .
+COPY . .
 RUN go mod download
-CMD go run main.go
+CMD go run .
 
 FROM golang:alpine AS builder
 WORKDIR /node
