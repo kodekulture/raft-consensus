@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  node_1:
+    container_name: "node_1"
+    build:
+      context: .
+  node_2:
+    container_name: "node_2"
+    build:
+      context: .
+  node_3:
+    container_name: "node_3"
+    build:
+      context: .
